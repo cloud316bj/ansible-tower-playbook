@@ -4,5 +4,5 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-        shell: echo hello world `date` by `hostname` >/root/hello.log
+        shell: echo hello world `date` by `hostname` >>/root/hello.log
 
