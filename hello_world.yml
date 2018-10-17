@@ -2,7 +2,8 @@
   hosts: all
   tasks:
     - name: Hello Message
-      shell: echo hello world `date` by `hostname` >/root/hello.log
       debug:
         msg: "Hello World!"
-      
+  tasks:
+    - name: create file    
+      shell: echo hello world `date` by `hostname` >/root/hello.log
